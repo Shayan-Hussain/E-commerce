@@ -29,3 +29,15 @@ const menu_btn_cta = () => {
     }
 
 }
+
+let slideshow = document.queryselector(".slideshow_items");
+
+const chg_img = () => {
+    let img1 = document.querySelector(".img1");
+
+    img1.style.display = "none";
+
+    let img2 = document.querySelector(".img2");
+
+    img2.style.display = "inline"
+}
