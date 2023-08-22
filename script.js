@@ -45,3 +45,21 @@ const toggle_dot = (ind) => {
         slideshow.innerHTML = img_3;
     }
 }
+
+let counter = 1;
+
+const chg_img = () => {
+
+    if (counter == 1)    {
+        slideshow.innerHTML = img_1;
+        counter++;
+    }   else if (counter == 2)   {
+        slideshow.innerHTML = img_2;
+        counter++;
+    }   else if (counter == 3)  {
+        slideshow.innerHTML = img_3;
+        counter = 1;
+    }
+}
+
+setInterval(chg_img, 5000);
