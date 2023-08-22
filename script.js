@@ -12,7 +12,7 @@ if (window.innerWidth <= "700") {
     nav_bar.style.display = "flex";
 }
 
-const menu_btn_cta = () => {
+const menu_btn = () => {
 
     if (nav_hidden == false) {
         nav_bar.style.display = "none";
@@ -30,14 +30,18 @@ const menu_btn_cta = () => {
 
 }
 
-let slideshow = document.queryselector(".slideshow_items");
+let slideshow = document.querySelector(".slideshow_items");
 
-const chg_img = () => {
-    let img1 = document.querySelector(".img1");
+let img_1 = `<img src="${'/images/img_1.jpg'}" class="slide_img">`
+let img_2 = `<img src="${'/images/img_2.jpg'}" class="slide_img">`
+let img_3 = `<img src="${'/images/img_3.jpg'}" class="slide_img">`
 
-    img1.style.display = "none";
-
-    let img2 = document.querySelector(".img2");
-
-    img2.style.display = "inline"
+const toggle_dot = (ind) => {
+    if (ind == 1)   {
+        slideshow.innerHTML = img_1;
+    }   else if (ind == 2)  {
+        slideshow.innerHTML = img_2;
+    }   else    {
+        slideshow.innerHTML = img_3;
+    }
 }
