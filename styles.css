@@ -143,9 +143,20 @@ li {
     background: grey;
     border-radius: 10px;
     margin: 20px;
+    padding: 0%;
     display: flex;
     object-fit: cover;
     overflow: hidden;
+}
+
+.buy_btn {
+    position: relative;
+    bottom: 2em;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    z-index: 10000;
+    background-color: violet;
 }
 
 @media (max-width: 700px) {
