@@ -152,6 +152,10 @@ li {
     height: 30px;
 }
 
+.red_placeholder::placeholder {
+    color: red;
+}
+
 .shopping_tools > lable {
     margin-left: 20px;
     margin-top: 20px;

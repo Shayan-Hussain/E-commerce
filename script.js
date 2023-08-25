@@ -85,6 +85,10 @@ function search() {
             let product_2 = document.querySelector("#product_2");
             
             product_2.style.border = "1px solid red"
+    }   else {
+            input.value = "";
+            input.placeholder =  'Not Found!';
+            input.classList.add("red_placeholder")    
     }
 }
 
