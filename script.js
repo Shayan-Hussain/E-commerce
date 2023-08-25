@@ -76,14 +76,30 @@ function search() {
     }   else if (input.value == "purfume" || input.value == "Purfume" || 
                 input.value == "Fragrance" || input.value == "fragrance" || 
                 input.value == "bottle") {
-            let product_2 = document.querySelector("#product_2");
+            let product_3 = document.querySelector("#product_3");
 
-            product_2.style.border = "1px solid red"
+            product_3.style.border = "1px solid red"
     }   else if (input.value == "earphone" || input.value == "Earphone" || 
                 input.value == "Headphone" || input.value == "headphone" || 
                 input.value == "headphones" || input.value == "earphones") {
-            let product_3 = document.querySelector("#product_3");
+            let product_2 = document.querySelector("#product_2");
             
-            product_3.style.border = "1px solid red"
+            product_2.style.border = "1px solid red"
     }
 }
+
+const rem_border = () => {
+    let product_1 = document.querySelector("#product_1");
+    let product_2 = document.querySelector("#product_2");
+    let product_3 = document.querySelector("#product_3");
+
+    if (product_1.style.border == "1px solid red" || 
+        product_2.style.border == "1px solid red" ||
+        product_3.style.border == "1px solid red" ) {
+            product_1.style.border = "";
+            product_2.style.border = "";
+            product_3.style.border = "";
+        }
+}
+
+setInterval(rem_border, 10000);
