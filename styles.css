@@ -157,8 +157,12 @@ li {
     margin-top: 20px;
 }
 
-.lable_search {
-
+.shopping_tools > button {
+    height: 30px;
+    margin: 0px 20px;
+    background-color:rgb(36, 127, 218);
+    color: white;
+    border-radius: 5px;
 }
 
 .store {

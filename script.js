@@ -63,3 +63,27 @@ const chg_img = () => {
 }
 
 setInterval(chg_img, 5000);
+
+function search() {
+    const input = document.querySelector("input");
+
+    if (input.value == "glasses" || input.value == "Glasses" || 
+        input.value == "Shades" || input.value == "shades" || 
+        input.value == "tints") {
+            let product_1 = document.querySelector("#product_1");
+
+            product_1.style.border = "1px solid red"
+    }   else if (input.value == "purfume" || input.value == "Purfume" || 
+                input.value == "Fragrance" || input.value == "fragrance" || 
+                input.value == "bottle") {
+            let product_2 = document.querySelector("#product_2");
+
+            product_2.style.border = "1px solid red"
+    }   else if (input.value == "earphone" || input.value == "Earphone" || 
+                input.value == "Headphone" || input.value == "headphone" || 
+                input.value == "headphones" || input.value == "earphones") {
+            let product_3 = document.querySelector("#product_3");
+            
+            product_3.style.border = "1px solid red"
+    }
+}
