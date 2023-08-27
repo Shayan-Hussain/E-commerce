@@ -49,6 +49,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    overflow-x: scroll;
 }
 
 .toogle_dots_container {
@@ -79,12 +80,13 @@ header {
     height: 100%;
     max-width: min-content;
     max-height: fit-content;
-
 }
 
 footer {
     height: 100px;
     width: 100vw;
+    position: fixed;
+    bottom: 0;
     background-color: dodgerblue;
     padding-bottom: 10px;
     display: flex;
